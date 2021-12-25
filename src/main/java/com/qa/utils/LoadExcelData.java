@@ -15,8 +15,13 @@ public class LoadExcelData {
 	int iMatchCount=0;
 	int iFetchRow=-1;
 	boolean fileFlagCheck=false;
-	protected String testName, testId,applicationId,profileName,applicantLastName,applicantInitials;
-
+	public String testName, testId;
+	public String applicationId;
+	public String profileName;
+	public String applicantLastName;
+	public String applicantInitials;
+	
+	
 	public boolean commonTestDataLoad(String testCaseId,String testCaseName,String browser) throws FileNotFoundException,IOException {
 		String filePath= System.getProperty("user.dir").concat("\\src\\test\\resources\\TestInput.xlsx");
 		File inputFile= new File(filePath);
@@ -72,9 +77,9 @@ public class LoadExcelData {
 		}else {
 			this.testId= TestData[iFetchRow][1];
 			this.testName= TestData[iFetchRow][2];
-			this.applicationId= TestData[iFetchRow][3];
-			this.profileName= TestData[iFetchRow][4];
-			this.applicantInitials= TestData[iFetchRow][5];
+			this.applicationId= TestData[iFetchRow][4];
+			this.profileName= TestData[iFetchRow][5];
+			this.applicantInitials= TestData[iFetchRow][6];
 			fileFlagCheck= true;		
 		}
 		return fileFlagCheck;

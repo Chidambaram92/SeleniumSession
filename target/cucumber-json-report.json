@@ -1,0 +1,605 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2021-12-25T16:45:22.438Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4414200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.src.teststeps.ApplicationHooks.getProperty()"
+            }
+          },
+          {
+            "result": {
+              "duration": 4542534000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.src.teststeps.ApplicationHooks.launchBrowser()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Get User Data Home Page Scenario",
+        "description": "",
+        "id": "test-data-feature-file;get-user-data-home-page-scenario",
+        "after": [
+          {
+            "result": {
+              "duration": 11283000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.src.teststeps.ApplicationHooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 903629900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.src.teststeps.ApplicationHooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9382928400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user navigates to home page",
+            "match": {
+              "location": "com.src.teststeps.HomePageSteps.userGetsDataHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 687304000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "verify home page is launched",
+            "match": {
+              "location": "com.src.teststeps.HomePageSteps.verificationOfHomePage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4565038900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "get search name \"Dresses\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Dresses",
+                  "offset": 17
+                }
+              ],
+              "location": "com.src.teststeps.HomePageSteps.enterSearchText(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@HomeTest"
+          },
+          {
+            "name": "@SmokeTest"
+          },
+          {
+            "name": "@HomeTest"
+          }
+        ]
+      }
+    ],
+    "name": "Test Data Feature File",
+    "description": "",
+    "id": "test-data-feature-file",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/feature/HomePageTest.feature",
+    "tags": [
+      {
+        "name": "@HomeTest",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      },
+      {
+        "name": "@SmokeTest",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 11
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 17163786500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user navigates to orange site launch page",
+            "match": {
+              "location": "com.src.teststeps.LoginPageOrangeSteps.userGetsDataLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 15069335900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "verify if orange site home page is navigated",
+            "match": {
+              "location": "com.src.teststeps.LoginPageOrangeSteps.verificationOfLoginPage()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-25T16:45:42.702Z",
+        "before": [
+          {
+            "result": {
+              "duration": 14665000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.src.teststeps.ApplicationHooks.getProperty()"
+            }
+          },
+          {
+            "result": {
+              "duration": 3287805400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.src.teststeps.ApplicationHooks.launchBrowser()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "SearchPage select for a particulra id",
+        "description": "",
+        "id": "login-orange-test-feature;searchpage-select-for-a-particulra-id",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.src.teststeps.ApplicationHooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 867531900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.src.teststeps.ApplicationHooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 451620100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I verify the tabs present in Home page",
+            "match": {
+              "location": "com.src.teststeps.LoginPageOrangeSteps.returnTabsSelection(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Admin"
+                ]
+              },
+              {
+                "cells": [
+                  "PIM"
+                ]
+              },
+              {
+                "cells": [
+                  "Time"
+                ]
+              }
+            ],
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@OrangeTest"
+          },
+          {
+            "name": "@OrangeTest"
+          }
+        ]
+      }
+    ],
+    "name": "Login Orange Test Feature",
+    "description": "",
+    "id": "login-orange-test-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/feature/SearchOrange.feature",
+    "tags": [
+      {
+        "name": "@OrangeTest",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7977168200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user navigates to home page",
+            "match": {
+              "location": "com.src.teststeps.HomePageSteps.userGetsDataHomePage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-25T16:46:19.578Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.src.teststeps.ApplicationHooks.getProperty()"
+            }
+          },
+          {
+            "result": {
+              "duration": 3637545400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.src.teststeps.ApplicationHooks.launchBrowser()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Title of your scenario outline",
+        "description": "",
+        "id": "search-test-results-scenario;title-of-your-scenario-outline;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 610700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.src.teststeps.ApplicationHooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 846207900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.src.teststeps.ApplicationHooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 959906300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user wants to search for \"Dresses\" in search header",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Dresses\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.src.teststeps.SearchPageSteps.userGetsSearchKey(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5281617700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user check for the \"Casual Dresses \u003e Printed Dress\" in search list of particular category",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Casual Dresses \u003e Printed Dress",
+                  "offset": 20
+                }
+              ],
+              "location": "com.src.teststeps.SearchPageSteps.verificationOfSearchResults(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 417827200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "verify if footer news letter is loaded in search results page",
+            "match": {
+              "location": "com.src.teststeps.SearchPageSteps.goToNewsLetterSection()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3166725700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user verify the \"Specials\" value in footer section",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Specials",
+                  "offset": 17
+                }
+              ],
+              "location": "com.src.teststeps.SearchPageSteps.verificationOfSearchHeaderSection(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SearchTest"
+          },
+          {
+            "name": "@SmokeTest"
+          },
+          {
+            "name": "@Smoke"
+          },
+          {
+            "name": "@SearchTest"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 8030755400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user navigates to home page",
+            "match": {
+              "location": "com.src.teststeps.HomePageSteps.userGetsDataHomePage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-25T16:46:41.897Z",
+        "before": [
+          {
+            "result": {
+              "duration": 996700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.src.teststeps.ApplicationHooks.getProperty()"
+            }
+          },
+          {
+            "result": {
+              "duration": 3179705200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.src.teststeps.ApplicationHooks.launchBrowser()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Title of your scenario outline",
+        "description": "",
+        "id": "search-test-results-scenario;title-of-your-scenario-outline;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 1348800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.src.teststeps.ApplicationHooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 913646300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.src.teststeps.ApplicationHooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 968860600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user wants to search for \"Shirts\" in search header",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Shirts\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.src.teststeps.SearchPageSteps.userGetsSearchKey(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4944225400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user check for the \"T-shirts \u003e Faded Short Sleeve T-\" in search list of particular category",
+            "match": {
+              "arguments": [
+                {
+                  "val": "T-shirts \u003e Faded Short Sleeve T-",
+                  "offset": 20
+                }
+              ],
+              "location": "com.src.teststeps.SearchPageSteps.verificationOfSearchResults(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 425788400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "verify if footer news letter is loaded in search results page",
+            "match": {
+              "location": "com.src.teststeps.SearchPageSteps.goToNewsLetterSection()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3348086200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user verify the \"Best sellers\" value in footer section",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Best sellers",
+                  "offset": 17
+                }
+              ],
+              "location": "com.src.teststeps.SearchPageSteps.verificationOfSearchHeaderSection(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SearchTest"
+          },
+          {
+            "name": "@SmokeTest"
+          },
+          {
+            "name": "@Smoke"
+          },
+          {
+            "name": "@SearchTest"
+          }
+        ]
+      }
+    ],
+    "name": "Search Test results scenario",
+    "description": "",
+    "id": "search-test-results-scenario",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/feature/SearchResults.feature",
+    "tags": [
+      {
+        "name": "@SearchTest",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@SmokeTest",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 13
+        }
+      }
+    ]
+  }
+]

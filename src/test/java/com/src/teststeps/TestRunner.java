@@ -11,7 +11,7 @@ import io.cucumber.junit.CucumberOptions;
 		glue = {"com/src/teststeps"},
 		plugin = {"pretty","html:target/cucumber-html-report", "json:target/cucumber-json-report.json"},
 		monochrome= true,
-		tags="@HomeTest or @SearchTest"
+		tags="@HomeTest or @SearchTest or @OrangeTest"
 		)
 
 public class TestRunner {

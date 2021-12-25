@@ -1,8 +1,7 @@
-
 @SearchTest @SmokeTest
 Feature: Search Test results scenario
 
-Background:
+  Background: 
     Given user navigates to home page
 
   @Smoke @SearchTest
@@ -13,6 +12,6 @@ Background:
     Then user verify the "<footerSection>" value in footer section
 
     Examples: 
-      | searchkey| searchResults                        | footerSection |
-      | Dresses  |   Casual Dresses > Printed Dress     | Specials      |
-      | Shirts   |   T-shirts > Faded Short Sleeve T-   | Best sellers  |
+      | searchkey | searchResults                    | footerSection |
+      | Dresses   | Casual Dresses > Printed Dress   | Specials      |
+      | Shirts    | T-shirts > Faded Short Sleeve T- | Best sellers  |

@@ -1,6 +1,8 @@
+com\test\pages\SearchPage.class
+com\qa\utils\CommonMethodsSelenium.class
 com\qa\utils\ConfigReader.class
 com\test\pages\HomePageOrange.class
-com\test\pages\SearchPage.class
+com\qa\utils\LoadExcelData.class
 com\test\pages\HomePage.class
-com\qa\utils\CommonMethodsSelenium.class
+com\test\pages\EmployeePage.class
 com\test\pages\LoginOrange.class
